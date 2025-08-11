@@ -117,7 +117,7 @@ option(USE_LZMA "Use LZMA compression format if found" ON)
 option(USE_BZ2 "Use BZ2 compression format if found" ON)
 
 # Set fPIC flag when building shared libraries
-set(CMAKE_POSITION_INDEPENDENT_CODE ${BUILD_SHARED_LIBS})
+option(CMAKE_POSITION_INDEPENDENT_CODE "Use position independent code" ${BUILD_SHARED_LIBS})
 
 # scotcherr option
 set(LIBSCOTCHERR "" CACHE STRING "Which error library is linked by default")
